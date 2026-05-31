@@ -29,3 +29,7 @@ Technologies Used
 conclusion
 
 The project demonstrates the practical applications of IoT in agriculture, environmental monitoring, and AI-powered intelligent systems.
+
+AUTHOR
+
+B SABAREESH
