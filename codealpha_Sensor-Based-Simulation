@@ -1,0 +1,41 @@
+import random
+import time
+
+print("=== IoT Air and Water Quality Monitoring System ===")
+
+while True:
+    # Simulated sensor readings
+    air_quality = random.randint(100, 900)
+    water_quality = random.randint(100, 900)
+
+    print("\n--- Sensor Readings ---")
+    print(f"Air Quality Value: {air_quality}")
+    print(f"Water Quality Value: {water_quality}")
+
+    # Air Quality Status
+    if air_quality < 300:
+        air_status = "Good"
+    elif air_quality < 600:
+        air_status = "Moderate"
+    else:
+        air_status = "Poor"
+
+    # Water Quality Status
+    if water_quality > 700:
+        water_status = "Clean"
+    elif water_quality > 400:
+        water_status = "Moderate"
+    else:
+        water_status = "Contaminated"
+
+    print(f"Air Quality Status: {air_status}")
+    print(f"Water Quality Status: {water_status}")
+
+    # Alerts
+    if air_status == "Poor":
+        print("⚠ Alert: Poor Air Quality Detected!")
+
+    if water_status == "Contaminated":
+        print("⚠ Alert: Water Contamination Detected!")
+
+    time.sleep(2)
